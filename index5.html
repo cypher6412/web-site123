@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Williams Portfolio</title>
+    <style>
+        /* Reset default margin and padding */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Neon background styling */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #fff;
+            background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
+            background-size: 300% 300%;
+            animation: neon-bg 10s ease infinite;
+            padding: 20px;
+        }
+
+        @keyframes neon-bg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+        }
+
+        header h1 {
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.4rem;
+            color: #ddd;
+        }
+
+        .section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px #00ffcc;
+        }
+
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff99cc;
+        }
+
+        .section p, ul {
+            font-size: 1.2rem;
+            color: #ddd;
+            margin-bottom: 10px;
+            line-height: 1.8;
+        }
+
+        /* Contact Form Styling */
+        #contact {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5), 0 0 10px #00ffcc;
+            text-align: center;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            text-shadow: 0 0 10px #ff99cc, 0 0 20px #ff99cc;
+        }
+
+        #contact form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        #contact input, #contact textarea {
+            width: 90%;
+            max-width: 400px;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #00ffcc;
+            background: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            font-size: 1rem;
+        }
+
+        #contact textarea {
+            height: 100px;
+            resize: none;
+        }
+
+        #contact button {
+            padding: 10px 20px;
+            background: #00ffcc;
+            color: #000;
+            border: none;
+            border-radius: 5px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        #contact button:hover {
+            background: #ff99cc;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 1rem;
+            color: #ddd;
+            padding: 20px 0;
+            border-top: 1px solid rgba(255, 255, 255, 0.3);
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Marys Portfolio</h1>
+        <p>Welcome to my cybersecurity journey!</p>
+    </header>
+
+    <section class="section">
+        <h2>About Me</h2>
+        <p>Hi, I'm  mary, a passionate cybersecurity student dedicated to making the digital world a safer place. My journey into cybersecurity is fueled by my curiosity for technology and my drive to combat cyber threats.</p>
+        <p>Outside of cybersecurity, I enjoy exploring emerging technologies, coding, and mentoring others on cybersecurity best practices.</p>
+    </section>
+
+    <section class="section">
+        <h2>My Area of Specialization</h2>
+        <ul>
+            <li>Ethical Hacking</li>
+            <li>Network Security</li>
+            <li>Incident Response</li>
+            <li>Threat Intelligence</li>
+            <li>Data Privacy and Compliance</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contactform">
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <input type="email" id="email" name="email" placeholder="Your Email" required>
+            <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 mary. All rights reserved.</p>
+    </footer>
+</body>
+</html>
